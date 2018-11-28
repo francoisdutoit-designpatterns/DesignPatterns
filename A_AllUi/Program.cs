@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adapter;
+using System;
 
 namespace A_AllUi
 {
@@ -40,7 +41,14 @@ namespace A_AllUi
             VisitorUi();
         }
 
-        static void AdapterUi() { }
+        static void AdapterUi() {
+
+            ITarget Itarget = new EmployeeAdapter();
+            ThirdPartyBillingSystem client = new ThirdPartyBillingSystem(Itarget);
+            client.ShowEmployeeList();
+
+            Console.ReadKey();
+        }
         static void BridgeUi() { }
         static void BuilderUi() { }
         static void ChainOfResponsibilityUi() { }

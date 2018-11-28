@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Adapter
+namespace Utility
 {
     public class Class1
     {
