@@ -1,4 +1,4 @@
-﻿using Adapter;
+﻿using AttackExample;
 using System;
 
 namespace A_AllUi
@@ -43,9 +43,20 @@ namespace A_AllUi
 
         static void AdapterUi() {
 
-            ITarget Itarget = new EmployeeAdapter();
-            ThirdPartyBillingSystem client = new ThirdPartyBillingSystem(Itarget);
-            client.ShowEmployeeList();
+            EnemyRobot fredTheRobot = new EnemyRobot();
+
+            IEnemyAttacker tank = new EnemyTank();
+            IEnemyAttacker robotAdapter = new EnemyRobotAdapter(fredTheRobot);
+
+            Console.WriteLine("The Enemy Tank");
+            tank.assignDriver("Frank");
+            tank.driveForward();
+            tank.fireWeapon();
+
+            Console.WriteLine("The Robot with Adapter");
+            robotAdapter.assignDriver("Mark");
+            robotAdapter.driveForward();
+            robotAdapter.fireWeapon();
 
             Console.ReadKey();
         }

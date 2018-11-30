@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AttackExample
+{
+    public class EnemyRobot
+    {
+        Random generator = new Random();
+
+        public void smashWithHands()
+        {
+            int attackDamage = generator.Next(10) + 1;
+            Console.WriteLine($"Enemy Robot Causes {attackDamage} with it's hands.");
+        }
+
+        public void WalkForward()
+        {
+            int movement = generator.Next(5) + 1;
+            Console.WriteLine($"Enemy Robot Walks Forward {movement} spaces.");
+        }
+
+        public void reactToHuman(string driverName)
+        {
+            Console.WriteLine($"Enemy Robot Tramps on {driverName}.");
+        }
+    }
+}
