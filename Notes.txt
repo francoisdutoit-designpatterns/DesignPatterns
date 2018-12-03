@@ -1,2 +1,13 @@
 https://www.youtube.com/user/derekbanas/playlists
 https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07
+
+1.) Adapter 
+2.) Strategy 
+
+
+2.) State
+3.) Proxy
+
+
+
+https://springframework.guru/gang-of-four-design-patterns/
