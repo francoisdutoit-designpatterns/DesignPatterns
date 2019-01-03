@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rules
+namespace FactoryMethod
 {
     public class Class1
     {
