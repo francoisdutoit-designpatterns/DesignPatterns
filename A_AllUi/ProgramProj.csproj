@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AttackExample\AttackExample.csproj" />
-    <ProjectReference Include="..\Proxy\AtmProxy.csproj" />
+    <ProjectReference Include="..\AttackExample\Adpapter_AttackExample.csproj" />
+    <ProjectReference Include="..\Proxy\Proxy_Atm.csproj" />
     <ProjectReference Include="..\Strategy\Strategy.csproj" />
   </ItemGroup>
 

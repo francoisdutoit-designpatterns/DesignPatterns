@@ -1,0 +1,27 @@
+https://www.dofactory.com/net/design-patterns
+
+//Behavioural
+--------------------------------------------------------------------------
+Strategy - Decide Algorithm to use at runtime   (March)
+ChainOfResposibility
+Iterator
+Observer
+Visitor
+
+//Creational
+--------------------------------------------------------------------------
+Singleton  (March)
+AbstractFactory
+Builder
+FactoryMethod
+LazyLoad
+Utility
+
+//Structural
+--------------------------------------------------------------------------
+Adapter  
+Facade
+Repository
+MVVM
+ServiceLocator
+NullObject

@@ -1,8 +1,9 @@
-﻿ Strategy. Allows one of a family of algorithms to be selected on-the-fly at run-time.
+﻿Strategy : Encapsulates an algorithm inside a class
+
+ Strategy. Allows one of a family of algorithms to be selected on-the-fly at run-time.
 
  Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the 
  algorithm vary independently from clients that use it.
 
-
- https://www.dofactory.com/net/strategy-design-pattern
+https://www.dofactory.com/net/strategy-design-pattern
 

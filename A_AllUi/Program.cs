@@ -1,4 +1,5 @@
 ﻿using AttackExample;
+using Common.Interfaces;
 using Proxy;
 using Strategy;
 using System;
@@ -9,142 +10,104 @@ namespace A_AllUi
     {
         static void Main(string[] args)
         {
-            AdapterUi();
-            BridgeUi();
-            BuilderUi();
-            ChainOfResponsibilityUi();
-            CommandUi();
-            CompositeUi();
-            DecoratorUi();
-            EventAggregatorUi();
-            FacadeUi();
-            FactoryUi();
-            FlyweightUi();
-            InterpreterUi();
-            IteratorUi();
-            LazyLoadUi();
-            MediatorUi();
-            MementoUi();
-            ModelViewPresenterUi();
-            ModelViewViewModelUi();
-            NullObjectUi();
-            ObserverUi();
-            PrototypeUi();
-            Proxy();
-            RepositoryUi();
-            RulesUi();
-            ServiceLocatorUi();
-            SingletonUi();
-            SpecificationUi();
-            StateUi();
-            StrategyUi();
-            TemplateMethodUi();
-            UnitOfWorkUi();
-            VisitorUi();
+            Execute();
         }
 
-        static void AdapterUi()
+        public  static void Execute()
         {
-
-            EnemyRobot fredTheRobot = new EnemyRobot();
-
-            IEnemyAttacker tank = new EnemyTank();
-            IEnemyAttacker robotAdapter = new EnemyRobotAdapter(fredTheRobot);
-
-            Console.WriteLine("The Enemy Tank");
-            tank.assignDriver("Frank");
-            tank.driveForward();
-            tank.fireWeapon();
-
-            Console.WriteLine("The Robot with Adapter");
-            robotAdapter.assignDriver("Mark");
-            robotAdapter.driveForward();
-            robotAdapter.fireWeapon();
-
-            Console.ReadKey();
+            IProgram programToExecute;
+            programToExecute = new StrategyProgram();
+            programToExecute.Execute();
         }
-        static void BridgeUi() { }
-        static void BuilderUi() { }
-        static void ChainOfResponsibilityUi() { }
-        static void CommandUi() { }
-        static void CompositeUi() { }
-        static void DecoratorUi() { }
-        static void EventAggregatorUi() { }
-        static void FacadeUi() { }
-        static void FactoryUi() { }
-        static void FlyweightUi() { }
-        static void InterpreterUi() { }
-        static void IteratorUi() { }
-        static void LazyLoadUi() { }
-        static void MediatorUi() { }
-        static void MementoUi() { }
-        static void ModelViewPresenterUi() { }
-        static void ModelViewViewModelUi() { }
-        static void NullObjectUi() { }
-        static void ObserverUi() { }
-        static void PrototypeUi() { }
-        static void Proxy()
-        {
 
-            ////ATMMachine atmMachine = new ATMMachine();
+        //static void AdapterUi()
+        //{
 
-            ////atmMachine.insertCard();
+        //    EnemyRobot fredTheRobot = new EnemyRobot();
 
-            ////atmMachine.ejectCard();
+        //    IEnemyAttacker tank = new EnemyTank();
+        //    IEnemyAttacker robotAdapter = new EnemyRobotAdapter(fredTheRobot);
 
-            ////atmMachine.insertCard();
+        //    Console.WriteLine("The Enemy Tank");
+        //    tank.assignDriver("Frank");
+        //    tank.driveForward();
+        //    tank.fireWeapon();
 
-            ////atmMachine.insertPin(1234);
+        //    Console.WriteLine("The Robot with Adapter");
+        //    robotAdapter.assignDriver("Mark");
+        //    robotAdapter.driveForward();
+        //    robotAdapter.fireWeapon();
 
-            ////atmMachine.requestCash(2000);
+        //    Console.ReadKey();
+        //}
+        //static void BridgeUi() { }
+        //static void BuilderUi() { }
+        //static void ChainOfResponsibilityUi() { }
+        //static void CommandUi() { }
+        //static void CompositeUi() { }
+        //static void DecoratorUi() { }
+        //static void EventAggregatorUi() { }
+        //static void FacadeUi() { }
+        //static void FactoryUi() { }
+        //static void FlyweightUi() { }
+        //static void InterpreterUi() { }
+        //static void IteratorUi() { }
+        //static void LazyLoadUi() { }
+        //static void MediatorUi() { }
+        //static void MementoUi() { }
+        //static void ModelViewPresenterUi() { }
+        //static void ModelViewViewModelUi() { }
+        //static void NullObjectUi() { }
+        //static void ObserverUi() { }
+        //static void PrototypeUi() { }
+        //static void Proxy()
+        //{
 
-            ////atmMachine.insertCard();
+        //    ////ATMMachine atmMachine = new ATMMachine();
 
-            ////atmMachine.insertPin(1234);
+        //    ////atmMachine.insertCard();
 
-            ////// NEW STUFF : Proxy Design Pattern Code
-            ////// The interface limits access to just the methods you want
-            ////// made accessible
+        //    ////atmMachine.ejectCard();
 
-            ////IGetATMData realATMMachine = new ATMMachine();
+        //    ////atmMachine.insertCard();
 
-            ////IGetATMData atmProxy = new ATMProxy();
+        //    ////atmMachine.insertPin(1234);
 
-            ////Console.WriteLine("\nCurrent ATM State " + atmProxy.getATMState());
+        //    ////atmMachine.requestCash(2000);
 
-            ////Console.WriteLine("\nCash in ATM Machine $" + atmProxy.getCashInMachine());
+        //    ////atmMachine.insertCard();
 
-            // The user can't perform this action because ATMProxy doesn't
-            // have access to that potentially harmful method
-            // atmProxy.setCashInMachine(10000);
-        }
-        static void RepositoryUi() { }
-        static void RulesUi() { }
-        static void ServiceLocatorUi() { }
-        static void SingletonUi() { }
-        static void SpecificationUi() { }
-        static void StateUi() { }
-        static void Strategy()
-        {
-            var studentRecords = new SortedList();
-            studentRecords.Add("Samual");
-            studentRecords.Add("Jimmy");
-            studentRecords.Add("Sandra");
-            studentRecords.Add("Vivek");
-            studentRecords.Add("Anna");
+        //    ////atmMachine.insertPin(1234);
 
-            studentRecords.SetSortStrategy(new QuickSort());
-            studentRecords.Sort();
-            studentRecords.SetSortStrategy(new ShellSort());
-            studentRecords.Sort();
-            studentRecords.SetSortStrategy(new MergeSort());
-            studentRecords.Sort();
+        //    ////// NEW STUFF : Proxy Design Pattern Code
+        //    ////// The interface limits access to just the methods you want
+        //    ////// made accessible
 
-            Console.ReadKey();
-        }
-        static void TemplateMethodUi() { }
-        static void UnitOfWorkUi() { }
-        static void VisitorUi() { }
+        //    ////IGetATMData realATMMachine = new ATMMachine();
+
+        //    ////IGetATMData atmProxy = new ATMProxy();
+
+        //    ////Console.WriteLine("\nCurrent ATM State " + atmProxy.getATMState());
+
+        //    ////Console.WriteLine("\nCash in ATM Machine $" + atmProxy.getCashInMachine());
+
+        //    // The user can't perform this action because ATMProxy doesn't
+        //    // have access to that potentially harmful method
+        //    // atmProxy.setCashInMachine(10000);
+        //}
+        //static void RepositoryUi() { }
+        //static void RulesUi() { }
+        //static void ServiceLocatorUi() { }
+        //static void SingletonUi() { }
+        //static void SpecificationUi() { }
+        //static void StateUi() { }
+        //static void Strategy()
+        //{
+
+        //}
+        //static void TemplateMethodUi() { }
+        //static void UnitOfWorkUi() { }
+        //static void VisitorUi() { }
 
     }
 }
