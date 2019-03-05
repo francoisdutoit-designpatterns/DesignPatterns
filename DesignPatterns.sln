@@ -53,7 +53,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLocator", "ServiceLo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "State\State.csproj", "{5DA3837B-9A3F-4727-A20C-E2E3907598F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{E980B119-8A4E-4DF0-8CCC-AC76C30A92DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy_Sorting", "Strategy\Strategy_Sorting.csproj", "{E980B119-8A4E-4DF0-8CCC-AC76C30A92DC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{EC79AA66-9E81-47FA-BEC0-2C36D68466B0}"
 EndProject
@@ -100,11 +100,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{71511AE4-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{04A27581-5B28-408E-A271-1C5313EC3521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{C51BD800-38C5-46E4-B166-86EE1A62CBAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{C51BD800-38C5-46E4-B166-86EE1A62CBAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{449A4CB5-71FC-4D60-941C-EE9DC54953B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C6D31613-98CF-44F4-85D1-7E5BBA37B973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{C6D31613-98CF-44F4-85D1-7E5BBA37B973}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F20CBFB-36AF-4742-AA2B-A34A65441D3C}"
+	ProjectSection(SolutionItems) = preProject
+		MainNotes.txt = MainNotes.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy_AttackGame", "Strategy_AttackGame\Strategy_AttackGame.csproj", "{8E362A6E-26E4-42CB-981A-6617C17CB113}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -252,6 +259,10 @@ Global
 		{C6D31613-98CF-44F4-85D1-7E5BBA37B973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6D31613-98CF-44F4-85D1-7E5BBA37B973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6D31613-98CF-44F4-85D1-7E5BBA37B973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E362A6E-26E4-42CB-981A-6617C17CB113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E362A6E-26E4-42CB-981A-6617C17CB113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E362A6E-26E4-42CB-981A-6617C17CB113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E362A6E-26E4-42CB-981A-6617C17CB113}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +313,7 @@ Global
 		{A46B9B24-B091-4D6C-B369-0F631DEF9364} = {CB39E918-3918-4BA9-8129-CBF22976C7C8}
 		{C51BD800-38C5-46E4-B166-86EE1A62CBAC} = {063E85CF-1771-41DA-9235-8311015633D3}
 		{C6D31613-98CF-44F4-85D1-7E5BBA37B973} = {449A4CB5-71FC-4D60-941C-EE9DC54953B7}
+		{8E362A6E-26E4-42CB-981A-6617C17CB113} = {6B9378D8-705B-4251-9921-EBD963A6E79F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2D3265F-A2D2-4323-8522-18CB1B66A828}
