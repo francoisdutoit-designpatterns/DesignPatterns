@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Strategy_AttackGame.Models
+namespace Strategy_AttackGame.Models.AttackModels
 {
     public class PunchAttack : IAttackStrategy
     {
-        public void Execute(ICharacter character)
+        public void Execute(ICharacter characterToAttack, ICharacter attackingCharacter)
         {
-            character.Injuries.Add(new Injury()
+            characterToAttack.Injuries.Add(new Injury()
             {
                 Name = "BruiseWound",
                 Damage = 2

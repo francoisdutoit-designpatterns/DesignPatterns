@@ -6,6 +6,6 @@ namespace Strategy_AttackGame.Interfaces
 {
     public interface IAttackStrategy
     {
-        void Execute(ICharacter character);
+        void Execute(ICharacter characterToAttack, ICharacter attackingCharacter);
     }
 }

@@ -7,21 +7,18 @@ namespace Strategy_AttackGame.Models
 {
     public class Character : ICharacter
     {
-        private List<IAttackStrategy> _attackStrategies;
-
-
         public string Name { get; set; }
 
         public List<Injury> Injuries { get; set; }
 
-        public Character(List<IAttackStrategy> attackStrategies)
+        public Character(string name)
         {
-            _attackStrategies = attackStrategies;
+            Name = name;
         }
 
-        public void Attack(ICharacter character)
+        public void Attack(ICharacter characterToAttack, IAttackStrategy attackStrategy)
         {
-            _attackStrategy.Execute(character);
+            attackStrategy.Execute(characterToAttack,this);
         }
     }
 }
