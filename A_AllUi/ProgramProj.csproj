@@ -9,6 +9,7 @@
     <ProjectReference Include="..\AttackExample\Adpapter_AttackExample.csproj" />
     <ProjectReference Include="..\Proxy\Proxy_Atm.csproj" />
     <ProjectReference Include="..\Strategy\Strategy_Sorting.csproj" />
+    <ProjectReference Include="..\Strategy_AttackGame\Strategy_AttackGame.csproj" />
   </ItemGroup>
 
 </Project>

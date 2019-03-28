@@ -18,6 +18,19 @@ namespace Strategy_AttackGame
             firstCharacter.Attack(secondCharacter, new KniveAttack() { });
             secondCharacter.Attack(firstCharacter, new PunchAttack() { });
 
+            Console.WriteLine("firstCharacter");
+            foreach(var injury in firstCharacter.Injuries)
+            {
+                Console.WriteLine($"{injury.Name}, {injury.Damage}");
+            }
+
+            Console.WriteLine("secondCharacter");
+            foreach (var injury in secondCharacter.Injuries)
+            {
+                Console.WriteLine($"{injury.Name}, {injury.Damage}");
+            }
+
+            Console.ReadKey();
 
         }
     }

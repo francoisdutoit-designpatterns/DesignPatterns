@@ -2,6 +2,7 @@
 using Common.Interfaces;
 using Proxy;
 using Strategy;
+using Strategy_AttackGame;
 using System;
 
 namespace A_AllUi
@@ -17,8 +18,12 @@ namespace A_AllUi
         {
             IProgram programToExecute;
 
-            programToExecute = new StrategyProgram();
+            //programToExecute = new StrategyProgram();
+            //programToExecute.Execute();
+
+            programToExecute = new AttackGame();
             programToExecute.Execute();
+            
         }
 
         //static void AdapterUi()

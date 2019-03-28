@@ -14,6 +14,7 @@ namespace Strategy_AttackGame.Models
         public Character(string name)
         {
             Name = name;
+            Injuries = new List<Injury>();
         }
 
         public void Attack(ICharacter characterToAttack, IAttackStrategy attackStrategy)
